@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <RadioButton fx:id="left" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#radioSelect" text="Left">
+         <toggleGroup>
+            <ToggleGroup fx:id="startPosition" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="middle" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#radioSelect" text="Middle" toggleGroup="$startPosition" />
+      <RadioButton fx:id="right" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#radioSelect" text="Right" toggleGroup="$startPosition" />
+      <RadioButton fx:id="cross_auto_line" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#radioSelect" text="Cross Auto Line">
+         <toggleGroup>
+            <ToggleGroup fx:id="autoAction" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="scale_double_cube" layoutX="14.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioSelect" text="Scale Double Cube" toggleGroup="$autoAction" />
+      <RadioButton fx:id="scale_to_switch" layoutX="14.0" layoutY="184.0" mnemonicParsing="false" onAction="#radioSelect" text="Scale to Switch" toggleGroup="$autoAction" />
+      <RadioButton fx:id="switch_double_cube" layoutX="14.0" layoutY="201.0" mnemonicParsing="false" onAction="#radioSelect" text="Switch Double Cube" toggleGroup="$autoAction" />
+      <RadioButton fx:id="scale_only" layoutX="14.0" layoutY="218.0" mnemonicParsing="false" onAction="#radioSelect" text="Scale Only" toggleGroup="$autoAction" />
+      <RadioButton fx:id="switch_only" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#radioSelect" text="Switch Only" toggleGroup="$autoAction" />
+   </children>
+</AnchorPane>
